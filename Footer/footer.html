@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(252, 227, 115);
+            padding: 50px 25px 50px 25px;
+        }
+        u {
+            cursor: pointer;
+
+        }
+        .footer_links {
+            justify-content: space-around;
+            /* padding-top: 25px; */
+        }
+        .footer_socialmedia_icons {
+            justify-content: space-around;
+            padding-top: 25px;
+        }
+        /* .vertical-line {
+            border-left: 3px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        } */
+        
+
+        /* input form css start */
+        .footer_form_newsletter_input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 350px;
+            padding: 30px;
+
+        }
+
+        .wrapper .input-data {
+            height: 40px;
+            width: 100%;
+            position: relative;
+        }
+
+        .wrapper .input-data input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid black;
+        }
+
+        .input-data input:focus~label,
+        .input-data input:valid~label {
+            transform: translateY(-20px);
+            font-size: 15px;
+            color: black;
+        }
+
+        .wrapper .input-data label {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            color: black;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-data .underline {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .input-data .underline:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: black;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .input-data input:focus~.underline:before,
+        .input-data input:valid~.underline:before {
+            transform: scaleX(1);
+        }
+
+        /* input form css end */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid footer">
+        <div class="row ">
+                <!-- left side content start -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer_form">
+                        <div class="footer_form_text ">
+                            <div>
+                                <h6>NIEUWSBRIEF</h6>
+                            </div>
+                            <div>
+                                <h4><strong>Frans stuurt je graag e-mails</strong></h4>
+                            </div>
+                        </div>
+
+                        <div class="footer_form_newsletter">
+                            <div class="footer_form_newsletter_input form-inline">
+                                <div class="wrapper">
+                                    <div class="input-data">
+                                        <input type="text" required>
+                                        <div class="underline"></div>
+                                        <label>Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper">
+                                    <div class="input-data">
+                                        <input type="text" required>
+                                        <div class="underline"></div>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-dark "
+                                    style="border-radius: 10px; ">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- left side content end -->
+                
+                <!-- right side content start -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer_icons">
+                        <div>
+                            <h5>ÉÉN MUSEUM OP TWEE LOCATIES</h5>
+                        </div>
+                        <div class="footer_icons_castle ">
+
+                            <div class="footer_address_castle1"><img src="castle.png" alt="logo"
+                                    style="height: 75px;">
+                                <h6>HOF Groot Heiligland 622011 ES Haarlem</h6>
+                                <h6 href="#"><u>Openingstijden</u></h6>
+                            </div>
+
+                            <div class="footer_address_castle2"> <img src="castle2.png" alt="logo"
+                                    style="height: 75px;">
+                                <h6> HAL Grote Markt 162011 RD Haarlem</h6>
+                                <h6 href="#"><u>Openingstijden</u></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side content end -->
+               
+                <!-- row div closed -->
+        </div>
+       
+        <div class="footer_links row">
+            <h6 href="#"><u>Voorwaarden</u></h6>
+            <h6 href="#"><u>Over ons</u></h6>
+            <h6 href="#"><u>Veelgestelde vragen</u></h6>
+            <h6 href="#"><u>Contact</u></h6>
+            <h6 href="#"><u>Colofon</u></h6>
+            <h6 href="#"><u>Curatoren</u></h6>
+        </div>
+        <div class="footer_socialmedia_icons row ">
+            <img src="fbicon.svg" style="height:25px;" alt="logo">
+            <img src="likicon.svg" style="height:25px;" alt="logo">
+            <img src="instaicon.svg" style="height:25px;" alt="logo">
+            <img src="twittericon.svg" style="height:25px;" alt="logo">
+            <img src="yticon.svg" style="height:25px;" alt="logo">
+        </div>
+    </div>
+</body>
+
+</html>
